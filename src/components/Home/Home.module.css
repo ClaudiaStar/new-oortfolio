@@ -1,0 +1,38 @@
+.Home {
+  text-align: center;
+  color: #3d6cb9;
+  padding: 0;
+  vertical-align: middle;
+  height: 50vh;
+  display: table;
+  width: 100%;
+  margin: auto;
+}
+
+.HomeContent {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.Buzzwords {
+  color: #00d1ff;
+}
+
+.Self {
+  height: 150px;
+  border-radius: 100%;
+}
+
+.About {
+  background-color: #3d6cb9;
+  height: 35vh;
+  display: table;
+}
+
+.About p {
+  padding: 0 20%;
+  text-align: center;
+  color: #fafaf6;
+  display: table-cell;
+  vertical-align: middle;
+}

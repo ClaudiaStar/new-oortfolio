@@ -1,0 +1,44 @@
+.Header {
+  /*  */
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  height: 100px;
+  background-image: url("../assets/images/img3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15vh;
+}
+
+.li1 {
+  grid-area: 1/1/2/2;
+}
+
+.li2 {
+  grid-area: 1/13/2/14;
+  align-items: center;
+}
+
+.li3 {
+  grid-area: 1/14/2/15;
+}
+
+.li4 {
+  grid-area: 1/15/2/16;
+}
+
+.Logo {
+  height: 80px;
+}
+
+li:hover {
+  text-decoration: underline;
+}
