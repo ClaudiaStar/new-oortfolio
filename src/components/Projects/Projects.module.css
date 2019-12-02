@@ -1,0 +1,10 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Heading {
+  text-align: center;
+  color: #3ec1d3;
+}

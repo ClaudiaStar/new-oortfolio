@@ -1,0 +1,19 @@
+.ProjectCard {
+  border: 5px solid #ff165d;
+  max-width: 400px;
+  width: fit-content;
+  padding: 50px;
+  color: #3ec1d3;
+  /* height: 300px; */
+  margin: 30px 30px;
+  text-align: center;
+}
+/* 
+.ProjectCard p {
+  margin-bottom: 50px;
+} */
+
+.LinkDiv {
+  text-align: center;
+  margin-top: 50px;
+}

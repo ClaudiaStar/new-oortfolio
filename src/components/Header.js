@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 
 import classes from "./Header.module.css";
 
-import Logo from "../assets/images/logo.png";
-
 function Header() {
   const linkStyles = {
     textDecoration: "none",
-    color: "#3d6cb9",
-    fontWeight: "bold"
+    color: "#ff165d",
+    fontWeight: "bold",
+    border: "2px solid #3ec1d3",
+    padding: "5px",
+    borderRadius: "10%"
+  };
+
+  const logoStyles = {
+    textDecoration: "none"
   };
 
   return (
@@ -18,7 +23,7 @@ function Header() {
         <ul className={classes.parent}>
           <li className={classes.li1}>
             <Link to="/">
-              <img className={classes.Logo} src={Logo} alt="Logo" />
+              <h1 style={logoStyles}>C.E.</h1>
             </Link>
           </li>
           <li className={classes.li2}>
@@ -31,6 +36,7 @@ function Header() {
               Projects
             </Link>
           </li>
+
           <li className={classes.li4}>
             <Link to="/contact" style={linkStyles}>
               Contact

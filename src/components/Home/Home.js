@@ -4,9 +4,9 @@ import classes from "./Home.module.css";
 import self from "../../assets/images/self.jpg";
 
 function Home() {
-  const white = { color: "white", margin: "0 5px" };
-  const hash = { color: "#00d1ff", margin: "0 5px" };
-  const link = { margin: "0 7px", color: "white" };
+  const white = { color: "#fef6fb", margin: "0 5px" };
+  const hash = { color: "#ff165d", margin: "0 5px" };
+  const link = { margin: "0 7px", color: "black" };
 
   const [word1, setWord1] = useState(white);
   const [word2, setWord2] = useState(white);
@@ -17,16 +17,16 @@ function Home() {
   useEffect(() => {
     setTimeout(function() {
       setWord1(hash);
-    }, 1000);
+    }, 500);
     setTimeout(function() {
       setWord2(hash);
-    }, 2000);
+    }, 1000);
     setTimeout(function() {
       setWord3(hash);
-    }, 3000);
+    }, 1500);
     setTimeout(function() {
       setWord4(hash);
-    }, 4000);
+    }, 2000);
     // setTimeout(function() {
     //   setLine(hash);
     // }, 5000);
@@ -48,22 +48,21 @@ function Home() {
             <span style={word4}>creative</span>
           </h3>
           <img className={classes.Self} src={self} alt="self-img" />
+          <p>
+            "I have been a civil engineer for 4 years. In Jan 2019 I stumbled
+            upon web development, started learning the basics and have not
+            stopped since then. I learn with free (or almost free) online
+            platforms such as Udemy, FreeCodeCamp, LinkedIn Learning & Meetup.
+            At the moment, I am putting React.js & Firebase to use as I
+            collaborate with
+            <a href="https://the-collab-lab.codes/" style={link}>
+              The Collab Lab
+            </a>
+            mentors and developers to create a smart shopping list application.
+            Every day is a fulfilling adventure in the infinite world of web
+            development."
+          </p>
         </div>
-      </div>
-      <div className={classes.About}>
-        <p>
-          "I have been an engineer for 4 years. In Jan 2019 I stumbled upon web
-          development, started learning the basics and have not stopped since
-          then. I learn with free (or almost free) online platforms such as
-          Udemy, FreeCodeCamp, LinkedIn Learning & Meetup. At the moment, I am
-          putting React.js & Firebase to use as I collaborate with
-          <a href="https://the-collab-lab.codes/" style={link}>
-            The Collab Lab
-          </a>
-          mentors and developers to create a smart shopping list application.
-          Every day is a fulfilling adventure in the infinite world of web
-          development."
-        </p>
       </div>
     </React.Fragment>
   );

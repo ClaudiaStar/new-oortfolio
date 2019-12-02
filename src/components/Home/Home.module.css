@@ -1,9 +1,9 @@
 .Home {
   text-align: center;
-  color: #3d6cb9;
+  color: #ff9a00;
   padding: 0;
   vertical-align: middle;
-  height: 50vh;
+  height: 85vh;
   display: table;
   width: 100%;
   margin: auto;
@@ -15,7 +15,7 @@
 }
 
 .Buzzwords {
-  color: #00d1ff;
+  color: #ff165d;
 }
 
 .Self {
@@ -24,15 +24,14 @@
 }
 
 .About {
-  background-color: #3d6cb9;
   height: 35vh;
   display: table;
 }
 
-.About p {
-  padding: 0 20%;
+p {
+  padding: 50px 20%;
   text-align: center;
-  color: #fafaf6;
+  color: black;
   display: table-cell;
   vertical-align: middle;
 }
