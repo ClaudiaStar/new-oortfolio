@@ -2,26 +2,23 @@ import React, { useState } from "react";
 import classes from "./ProjectCard.module.css";
 
 function ProjectCard(props) {
-  const [buttonColor, setButtonColor] = useState("#ff9a00");
-  const [buttonFontColor, setButtonFontColor] = useState("#f6f7d7");
+  const [buttonColor, setButtonColor] = useState("#3ec1d3");
 
   const linkStyles = {
     textDecoration: "none",
-    color: buttonFontColor,
+    color: "#fef6fb",
     backgroundColor: buttonColor,
     padding: "10px",
-    border: "3px solid #ff9a00",
+    border: "3px solid #3ec1d3",
     borderRadius: "5%"
   };
 
   const onMouseEnter = () => {
-    setButtonColor("#f6f7d7");
-    setButtonFontColor("#ff9a00");
+    setButtonColor("#fef6fb03");
   };
 
   const onMouseLeave = () => {
-    setButtonColor("#ff9a00");
-    setButtonFontColor("#fafaf6");
+    setButtonColor("#3ec1d3");
   };
 
   return (

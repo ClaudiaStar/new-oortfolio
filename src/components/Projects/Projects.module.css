@@ -1,3 +1,11 @@
+.ProjectsSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/projects-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Projects {
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +13,8 @@
 }
 
 .Heading {
+  padding-top: 25px;
   text-align: center;
-  color: #3ec1d3;
+  font-weight: 600;
+  color: #fef6fb;
 }

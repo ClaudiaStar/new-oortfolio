@@ -3,15 +3,12 @@
   max-width: 400px;
   width: fit-content;
   padding: 50px;
-  color: #3ec1d3;
-  /* height: 300px; */
+  color: #fef6fb;
   margin: 30px 30px;
   text-align: center;
+  line-height: 25px;
+  font-weight: 400;
 }
-/* 
-.ProjectCard p {
-  margin-bottom: 50px;
-} */
 
 .LinkDiv {
   text-align: center;

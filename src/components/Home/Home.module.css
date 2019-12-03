@@ -1,12 +1,23 @@
+h1,
+h2,
+h3 {
+  font-family: "Solway", serif;
+}
+
 .Home {
   text-align: center;
-  color: #ff9a00;
+  color: #fef6fb;
   padding: 0;
   vertical-align: middle;
   height: 85vh;
   display: table;
   width: 100%;
   margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .HomeContent {
@@ -28,10 +39,12 @@
   display: table;
 }
 
-p {
+.HomeParagraph {
   padding: 50px 20%;
   text-align: center;
-  color: black;
+  color: #fef6fb;
   display: table-cell;
   vertical-align: middle;
+  line-height: 25px;
+  font-weight: 600;
 }

@@ -41,16 +41,16 @@ function Projects() {
   ));
 
   return (
-    <React.Fragment>
+    <div className={classes.ProjectsSection}>
       <div className={classes.Heading}>
         <h1>Projects</h1>
         <h3>
-          🛆 My passion is creating and web development gives me endless
-          possibilitites. 🛆
+          My passion is creating and programming gives me endless
+          possibilitites.
         </h3>
       </div>
       <div className={classes.Projects}>{projectCards}</div>
-    </React.Fragment>
+    </div>
   );
 }
 

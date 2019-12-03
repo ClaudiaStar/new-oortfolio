@@ -10,11 +10,16 @@ function Header() {
     fontWeight: "bold",
     border: "2px solid #3ec1d3",
     padding: "5px",
-    borderRadius: "10%"
+    borderRadius: "10%",
+    cursor: "pointer"
   };
 
   const logoStyles = {
-    textDecoration: "none"
+    textDecoration: "none",
+    fontSize: "30px",
+    fontFamily: "'Rock Salt', cursive",
+    cursor: "pointer",
+    color: "#3ec1d3"
   };
 
   return (
@@ -22,8 +27,8 @@ function Header() {
       <nav>
         <ul className={classes.parent}>
           <li className={classes.li1}>
-            <Link to="/">
-              <h1 style={logoStyles}>C.E.</h1>
+            <Link to="/" style={logoStyles}>
+              C.E.
             </Link>
           </li>
           <li className={classes.li2}>

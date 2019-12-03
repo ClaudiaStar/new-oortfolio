@@ -6,7 +6,7 @@ import self from "../../assets/images/self.jpg";
 function Home() {
   const white = { color: "#fef6fb", margin: "0 5px" };
   const hash = { color: "#ff165d", margin: "0 5px" };
-  const link = { margin: "0 7px", color: "black" };
+  const link = { margin: "0 7px", color: "#fef6fb", cursor: "pointer" };
 
   const [word1, setWord1] = useState(white);
   const [word2, setWord2] = useState(white);
@@ -27,9 +27,6 @@ function Home() {
     setTimeout(function() {
       setWord4(hash);
     }, 2000);
-    // setTimeout(function() {
-    //   setLine(hash);
-    // }, 5000);
   }, [hash]);
 
   return (
@@ -48,7 +45,7 @@ function Home() {
             <span style={word4}>creative</span>
           </h3>
           <img className={classes.Self} src={self} alt="self-img" />
-          <p>
+          <p className={classes.HomeParagraph}>
             "I have been a civil engineer for 4 years. In Jan 2019 I stumbled
             upon web development, started learning the basics and have not
             stopped since then. I learn with free (or almost free) online
