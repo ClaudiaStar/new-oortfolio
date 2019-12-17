@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProjectCard from "./ProjectCard";
+// import ProjectsCarousel from "./ProjectsCarousel";
 import classes from "./Projects.module.css";
 
 function Projects() {
