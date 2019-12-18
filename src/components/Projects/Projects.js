@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import ItemsCarousel from "react-items-carousel";
 import ProjectCard from "../Projects/ProjectCard";
 import classes from "./Projects.module.css";
+import something from "../../assets/images/projects-bg.jpg";
 
 export default () => {
   const projects = [
     {
       link: "https://github.com/the-collab-lab/tcl-2-smart-shopping-list",
       title: "Smart Shopping List",
+      image: { something },
       description:
         "Currently being developed in collaboration with The Collab Lab participants - this app learns your shopping habits and recurringly adds items to your shopping list! Built with React & Firestore."
     },
@@ -37,10 +39,11 @@ export default () => {
       title={project.title}
       description={project.description}
       key={project.title + "-" + index}
+      image={project.something}
     />
   ));
 
-  // carousel dependency code
+  // carousel code
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
   return (

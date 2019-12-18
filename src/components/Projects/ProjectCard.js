@@ -29,7 +29,7 @@ function ProjectCard(props) {
     >
       <h2>{props.title}</h2>
       <p>{props.description}</p>
-      <div className={classes.LinkDiv}>
+      <div className={classes.LinkDiv} style={{ backgroundImage: props.image }}>
         <a
           href={props.link}
           target="_blank"
