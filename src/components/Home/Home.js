@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import classes from "./Home.module.css";
 
-import self from "../../assets/images/self.jpg";
-
 function Home() {
   const white = { color: "#fef6fb", margin: "0 5px" };
   const hash = { color: "#ff165d", margin: "0 5px" };
-  const link = { margin: "0 7px", color: "#fef6fb", cursor: "pointer" };
+  const link = { margin: "0 7px", color: "#393e46", cursor: "pointer" };
 
   const [word1, setWord1] = useState(white);
   const [word2, setWord2] = useState(white);
@@ -44,14 +42,14 @@ function Home() {
             <span style={hash}>|</span>
             <span style={word4}>creative</span>
           </h3>
-          <img className={classes.Self} src={self} alt="self-img" />
+          {/* <img className={classes.Self} src={self} alt="self-img" /> */}
           <p className={classes.HomeParagraph}>
-            "I have been a civil engineer for 4 years. In Jan 2019 I stumbled
-            upon web development, started learning the basics and have not
-            stopped since then. I learn with free (or almost free) online
-            platforms such as Udemy, FreeCodeCamp, LinkedIn Learning & Meetup.
-            At the moment, I am putting React.js & Firebase to use as I
-            collaborate with
+            "I have been a civil engineer for 4 years. I crave problem-solving
+            and creativity. In Jan 2019 I stumbled upon web development, started
+            learning the basics and have not stopped since then. I learn with
+            free (or almost free) online platforms such as Udemy, FreeCodeCamp,
+            LinkedIn Learning & Meetup. At the moment, I am putting React.js &
+            Firebase to use as I collaborate with
             <a href="https://the-collab-lab.codes/" style={link}>
               The Collab Lab
             </a>

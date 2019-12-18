@@ -6,24 +6,23 @@ h3 {
 
 .Home {
   text-align: center;
-  color: #fef6fb;
+  color: #393e46;
   padding: 0;
   vertical-align: middle;
   height: 85vh;
   display: table;
   width: 100%;
   margin: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../assets/images/background.jpg");
+  background-image: url("../../assets/images/home-bg.jpg");
   background-color: #111;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
 .HomeContent {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .Buzzwords {
@@ -43,7 +42,7 @@ h3 {
 .HomeParagraph {
   padding: 50px 20%;
   text-align: center;
-  color: #fef6fb;
+  color: #393e46;
   display: table-cell;
   vertical-align: middle;
   line-height: 25px;
