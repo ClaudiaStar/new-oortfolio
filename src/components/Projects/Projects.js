@@ -1,10 +1,9 @@
-import React from "react";
-
-import ProjectCard from "./ProjectCard";
-// import ProjectsCarousel from "./ProjectsCarousel";
+import React, { useState } from "react";
+import ItemsCarousel from "react-items-carousel";
+import ProjectCard from "../Projects/ProjectCard";
 import classes from "./Projects.module.css";
 
-function Projects() {
+export default () => {
   const projects = [
     {
       link: "https://github.com/the-collab-lab/tcl-2-smart-shopping-list",
@@ -41,18 +40,31 @@ function Projects() {
     />
   ));
 
+  // carousel dependency code
+  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const chevronWidth = 40;
   return (
     <div className={classes.ProjectsSection}>
       <div className={classes.Heading}>
-        <h1>Projects</h1>
-        <h3>
-          My passion is creating and programming gives me endless
-          possibilitites.
-        </h3>
+        <h1>My Projects</h1>
+        <p>
+          My passion is creating and programming gives me endless possibilities.
+        </p>
       </div>
-      <div className={classes.Projects}>{projectCards}</div>
+      <div style={{ padding: `0 ${chevronWidth}px` }}>
+        <ItemsCarousel
+          requestToChangeActive={setActiveItemIndex}
+          activeItemIndex={activeItemIndex}
+          numberOfCards={1}
+          gutter={20}
+          leftChevron={<button>{"<"}</button>}
+          rightChevron={<button>{">"}</button>}
+          outsideChevron
+          chevronWidth={chevronWidth}
+        >
+          {projectCards}
+        </ItemsCarousel>
+      </div>
     </div>
   );
-}
-
-export default Projects;
+};

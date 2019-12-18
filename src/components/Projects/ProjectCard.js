@@ -23,7 +23,10 @@ function ProjectCard(props) {
 
   return (
     // eslint-disable-next-line react/jsx-no-target-blank
-    <div className={classes.ProjectCard}>
+    <div
+      style={{ height: "fit-content", background: "#EEE" }}
+      className={classes.ProjectCard}
+    >
       <h2>{props.title}</h2>
       <p>{props.description}</p>
       <div className={classes.LinkDiv}>
