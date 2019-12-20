@@ -1,25 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import classes from "./Header.module.css";
 
 function Header() {
-  const linkStyles = {
-    textDecoration: "none",
-    color: "#ff165d",
-    fontWeight: "bold",
-    border: "2px solid #3ec1d3",
-    padding: "5px",
-    borderRadius: "10%",
-    cursor: "pointer"
-  };
-
   const logoStyles = {
     textDecoration: "none",
     fontSize: "30px",
     fontFamily: "'Rock Salt', cursive",
     cursor: "pointer",
-    color: "#3ec1d3"
+    color: "#557308"
   };
 
   return (
@@ -27,25 +17,38 @@ function Header() {
       <nav>
         <ul className={classes.parent}>
           <li className={classes.li1}>
-            <Link to="/" style={logoStyles}>
+            <NavLink to="/" style={logoStyles}>
               C.E.
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.li2}>
-            <Link to="/" style={linkStyles}>
+            <NavLink
+              exact
+              to="/"
+              activeStyle={{ fontWeight: 900 }}
+              className={classes.NavLink}
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className={classes.li3}>
-            <Link to="/projects" style={linkStyles}>
+            <NavLink
+              to="/projects"
+              activeStyle={{ fontWeight: 900 }}
+              className={classes.NavLink}
+            >
               Projects
-            </Link>
+            </NavLink>
           </li>
 
           <li className={classes.li4}>
-            <Link to="/contact" style={linkStyles}>
+            <NavLink
+              to="/contact"
+              activeStyle={{ fontWeight: 900 }}
+              className={classes.NavLink}
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

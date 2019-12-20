@@ -7,26 +7,27 @@ import something from "../../assets/images/projects-bg.jpg";
 export default () => {
   const projects = [
     {
-      link: "https://github.com/the-collab-lab/tcl-2-smart-shopping-list",
+      codeLink: "https://github.com/the-collab-lab/tcl-2-smart-shopping-list",
+      appLink: "https://tcl-2-smart-shopping-list.netlify.com/",
       title: "Smart Shopping List",
-      image: { something },
+      image: something,
       description:
         "Currently being developed in collaboration with The Collab Lab participants - this app learns your shopping habits and recurringly adds items to your shopping list! Built with React & Firestore."
     },
     {
-      link: "https://github.com/ClaudiaStar/Movely",
+      codeLink: "https://github.com/ClaudiaStar/Movely",
       title: "Movely",
       description:
         "I am building this application because I need reminders to get up and move periodically during my coding sessions. It lets users create a list of moves and configure timers. When your sitting time is up, a move is picked for you at random! Built with React. "
     },
     {
-      link: "https://github.com/ClaudiaStar/react-todolist",
+      codeLink: "https://github.com/ClaudiaStar/react-todolist",
       title: "To-do List",
       description:
         "This is a to do list I built when I first started learning React. What I love the most about it is the simple yet beautiful styling."
     },
     {
-      link: "https://github.com/ClaudiaStar/drum-kit",
+      codeLink: "https://github.com/ClaudiaStar/drum-kit",
       title: "Drum Kit",
       description:
         "This was one of my first assignments from the full-stack web development bootcamp I completed in Sept 2019. This drum kit was built using JQuery and my favorite thing about it is how entertaining it is to my son!"
@@ -35,11 +36,12 @@ export default () => {
 
   const projectCards = projects.map((project, index) => (
     <ProjectCard
-      link={project.link}
+      codeLink={project.codeLink}
+      appLink={project.appLink}
       title={project.title}
       description={project.description}
       key={project.title + "-" + index}
-      image={project.something}
+      image={something}
     />
   ));
 
@@ -60,8 +62,12 @@ export default () => {
           activeItemIndex={activeItemIndex}
           numberOfCards={1}
           gutter={20}
-          leftChevron={<button>{"<"}</button>}
-          rightChevron={<button>{">"}</button>}
+          leftChevron={
+            <button className={classes.CarouselButton}>{"<"}</button>
+          }
+          rightChevron={
+            <button className={classes.CarouselButton}>{">"}</button>
+          }
           outsideChevron
           chevronWidth={chevronWidth}
         >

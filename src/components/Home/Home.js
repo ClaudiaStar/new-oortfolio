@@ -54,7 +54,7 @@ function Home() {
               The Collab Lab
             </a>
             mentors and developers to create a smart shopping list application.
-            Every day is a fulfilling adventure in the infinite world of web
+            Every day is a fulfilling adventure in the fascinating world of web
             development."
           </p>
         </div>

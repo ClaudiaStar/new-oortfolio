@@ -33,6 +33,16 @@
   grid-area: 1/15/2/16;
 }
 
-li:hover {
-  text-decoration: underline;
+.NavLink {
+  text-decoration: none;
+  color: #ff165d;
+  padding: 5px;
+  border-radius: 10%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.NavLink:hover,
+.NavLink:active {
+  font-weight: 900;
 }
