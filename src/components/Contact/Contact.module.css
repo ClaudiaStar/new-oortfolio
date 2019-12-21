@@ -1,0 +1,13 @@
+.Contact {
+  width: 50vh;
+  margin: auto;
+}
+
+.ContactForm {
+  width: fit-content;
+  margin: auto;
+}
+
+.ContactFormLabel {
+  font-family: "Solway", serif;
+}

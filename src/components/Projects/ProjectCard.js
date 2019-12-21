@@ -5,15 +5,14 @@ function ProjectCard(props) {
   return (
     // eslint-disable-next-line react/jsx-no-target-blank
     <div
-      style={{ height: "fit-content", background: "#EEE" }}
+      style={{
+        height: "fit-content"
+      }}
       className={classes.ProjectCard}
     >
       <h2>{props.title}</h2>
       <p>{props.description}</p>
-      <div
-        className={classes.LinkDiv}
-        style={{ backgroundImage: "url(" + props.image + ")" }}
-      >
+      <div className={classes.LinkDiv}>
         <a
           href={props.codeLink}
           target="_blank"
