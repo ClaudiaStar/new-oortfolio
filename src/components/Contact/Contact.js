@@ -41,59 +41,65 @@ const Contact = () => {
 
   return (
     <main className={classes.Contact}>
-      <h1>Talk to me.</h1>
-      <h2>Feedback, ideas, questions, favors, anecdotes...</h2>
+      <h1>Hey! </h1>
+      <h2>Let's get in touch.</h2>
       <form className={classes.ContactForm}>
-        <label for="name" className={classes.ContactFormLabel}>
+        <label className={classes.ContactFormLabel}>
           Your name:
+          <br />
+          <input
+            value={name}
+            type="text"
+            id="name"
+            onChange={handleNameChange}
+            className={classes.InputField}
+            size="54"
+            name="name"
+          />
         </label>
+
         <br />
-        <input
-          value={name}
-          type="text"
-          id="name"
-          onChange={handleNameChange}
-          className="inputField"
-          size="54"
-          name="name"
-        />
-        <br />
-        <label for="email" className={classes.ContactFormLabel}>
+        <label className={classes.ContactFormLabel}>
           Your email:
+          <br />
+          <input
+            value={email}
+            type="email"
+            id="email"
+            onChange={handleEmailChange}
+            className={classes.InputField}
+            size="54"
+            name="email"
+          />
         </label>
+
         <br />
-        <input
-          value={email}
-          type="email"
-          id="email"
-          onChange={handleEmailChange}
-          className="inputField"
-          size="54"
-          name="email"
-        />
-        <br />
-        <label for="message" className={classes.ContactFormLabel}>
+        <label className={classes.ContactFormLabel}>
           Your message:
+          <br />
+          <textarea
+            value={message}
+            type="text"
+            id="message"
+            onChange={handleMessageChange}
+            className={classes.InputField}
+            rows="10"
+            cols="50"
+            name="message"
+            placeholder="Dear Claudia,"
+          />
         </label>
+
         <br />
-        <textarea
-          value={message}
-          type="text"
-          id="message"
-          onChange={handleMessageChange}
-          className="textArea"
-          rows="10"
-          cols="50"
-          name="message"
-        />
-        <br />
-        <button
-          onClick={handleSubmit}
-          className="button-link"
-          id="addItemButton"
-        >
-          Submit
-        </button>
+        <div className={classes.ButtonDiv}>
+          <button
+            onClick={handleSubmit}
+            className={classes.ContactSubmit}
+            id="addItemButton"
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </main>
   );

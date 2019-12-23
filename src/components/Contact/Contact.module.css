@@ -1,13 +1,30 @@
 .Contact {
-  width: 50vh;
-  margin: auto;
-}
-
-.ContactForm {
   width: fit-content;
   margin: auto;
+  font-family: "Solway", serif;
 }
 
-.ContactFormLabel {
-  font-family: "Solway", serif;
+.InputField {
+  border: 2px solid #efc15d;
+}
+
+.ContactSubmit {
+  text-decoration: none;
+  color: #fef6fb;
+  background-color: #efc15d;
+  padding: 10px;
+  border: 3px solid #efc15d;
+  border-radius: 5%;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.ButtonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.ContactSubmit:hover {
+  color: #393e46;
+  background-color: #fef6fb03;
 }
