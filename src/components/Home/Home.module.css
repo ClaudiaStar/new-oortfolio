@@ -20,12 +20,15 @@ h3 {
 }
 
 .HomeContent {
-  display: table-cell;
-  vertical-align: top;
+  padding-top: 0;
 }
 
 .Buzzwords {
   color: #ff165d;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  margin: auto;
 }
 
 .Self {

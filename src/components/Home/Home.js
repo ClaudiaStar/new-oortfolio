@@ -1,31 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import classes from "./Home.module.css";
 
 function Home() {
-  const white = { color: "#fef6fb", margin: "0 5px" };
-  const hash = { color: "#ff165d", margin: "0 5px" };
   const link = { margin: "0 7px", color: "#393e46", cursor: "pointer" };
-
-  const [word1, setWord1] = useState(white);
-  const [word2, setWord2] = useState(white);
-  const [word3, setWord3] = useState(white);
-  const [word4, setWord4] = useState(white);
-  // const [line, setLine] = useState(white);
-
-  useEffect(() => {
-    setTimeout(function() {
-      setWord1(hash);
-    }, 500);
-    setTimeout(function() {
-      setWord2(hash);
-    }, 1000);
-    setTimeout(function() {
-      setWord3(hash);
-    }, 1500);
-    setTimeout(function() {
-      setWord4(hash);
-    }, 2000);
-  }, [hash]);
 
   return (
     <React.Fragment>
@@ -34,28 +11,27 @@ function Home() {
           <h1>Hi, my name is Claudia.</h1>
           <h2>I'm teaching myself web development.</h2>
           <h3 className={classes.Buzzwords}>
-            <span style={word1}>mom</span>
-            <span style={hash}>|</span>
-            <span style={word2}>engineer</span>
-            <span style={hash}>|</span>
-            <span style={word3}>minimalist</span>
-            <span style={hash}>|</span>
-            <span style={word4}>creative</span>
+            <span>mom</span>
+            <span>|</span>
+            <span>engineer</span>
+            <span>|</span>
+            <span>minimalist</span>
+            <span>|</span>
+            <span>creative</span>
           </h3>
-          {/* <img className={classes.Self} src={self} alt="self-img" /> */}
           <p className={classes.HomeParagraph}>
-            "I have been a civil engineer for 4 years. I crave problem-solving
-            and creativity. In Jan 2019 I stumbled upon web development, started
-            learning the basics and have not stopped since then. I learn with
-            free (or almost free) online platforms such as Udemy, FreeCodeCamp,
-            LinkedIn Learning & Meetup. At the moment, I am putting React.js &
-            Firebase to use as I collaborate with
+            "I am a civil engineer on my way to becoming a professional web
+            developer. I love that all you need are knowledge and creativity to
+            solve an infinite amount of problems. I learn with free (or almost
+            free) online platforms such as Udemy, FreeCodeCamp, LinkedIn
+            Learning & Meetup. Currently, I am putting React.js & Firebase to
+            use as I collaborate with
             <a href="https://the-collab-lab.codes/" style={link}>
               The Collab Lab
             </a>
             mentors and developers to create a smart shopping list application.
-            Every day is a fulfilling adventure in the fascinating world of web
-            development."
+            When away from my laptop you can find me spending time with my
+            husband, son, and fur child in beautiful Portland, OR."
           </p>
         </div>
       </div>
