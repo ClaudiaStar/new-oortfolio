@@ -20,12 +20,14 @@ export default () => {
     },
     {
       codeLink: "https://github.com/ClaudiaStar/react-todolist",
+      appLink: "http://tranquil-waters-52181.herokuapp.com/",
       title: "To-do List",
       description:
         "This is a to do list I built when I first started learning React. What I love the most about it is the simple yet beautiful styling."
     },
     {
       codeLink: "https://github.com/ClaudiaStar/drum-kit",
+      appLink: "https://claudias-drum-kit.herokuapp.com/index.html",
       title: "Drum Kit",
       description:
         "This was one of my first assignments from the full-stack web development bootcamp I completed in Sept 2019. This drum kit was built using JQuery and my favorite thing about it is how entertaining it is to my son!"

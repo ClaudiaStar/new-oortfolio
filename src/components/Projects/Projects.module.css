@@ -6,11 +6,12 @@
 }
 
 .Carousel {
-  margin: 0 250px;
+  margin: 0 auto;
   background-image: url("../../assets/images/projects-bg3.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
+  width: 60%;
 }
 
 .CarouselButton {
