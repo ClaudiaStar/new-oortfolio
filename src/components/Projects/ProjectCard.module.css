@@ -2,9 +2,9 @@
   border: 5px solid #ff165d;
   max-width: 800px;
   width: fit-content;
-  padding: 50px;
+  padding: 10px;
   color: #393e46;
-  margin: 50px auto;
+  margin: auto;
   text-align: center;
   line-height: 25px;
   font-weight: 400;
@@ -38,4 +38,20 @@
 .LinkDiv {
   text-align: center;
   margin-top: 50px;
+}
+
+.ProjectImage {
+  width: 250px;
+}
+
+.ProjectText {
+  width: 250px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.ProjectSeparator {
+  width: 250px;
+  margin-top: 40px;
 }

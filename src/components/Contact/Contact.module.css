@@ -1,11 +1,14 @@
 .Contact {
-  width: fit-content;
+  width: 90%;
   margin: auto;
   font-family: "Solway", serif;
+  margin-bottom: 30px;
 }
 
 .InputField {
   border: 2px solid #efc15d;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .ContactSubmit {
@@ -22,9 +25,27 @@
 .ButtonDiv {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .ContactSubmit:hover {
   color: #393e46;
   background-color: #fef6fb03;
+}
+
+.MessageThanks {
+  margin: 50px;
+  text-align: left;
+}
+
+.imageDiv {
+  text-align: center;
+}
+
+.image {
+  width: 200px;
+}
+
+.Separator {
+  width: 200px;
 }

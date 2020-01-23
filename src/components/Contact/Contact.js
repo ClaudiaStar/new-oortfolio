@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import firebase from "../../lib/firestore";
 import classes from "./Contact.module.css";
 
+import thanksImage from "../../assets/images/messagethanks.svg";
+import decorationImage from "../../assets/images/separator.png";
+import contactImage from "../../assets/images/contact.svg";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [submitClicked, setSubmitClicked] = useState(false);
 
   const submitMessage = (name, email, message) => {
     const db = firebase.firestore();
@@ -36,13 +41,46 @@ const Contact = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    submitMessage(name, email, message);
+    if ((name, email, message)) {
+      submitMessage(name, email, message);
+      setSubmitClicked(true);
+    } else {
+      alert("Please fill out all fields");
+    }
   };
 
-  return (
+  return submitClicked ? (
+    <main>
+      {" "}
+      <h3 className={classes.MessageThanks}>
+        Your message has been succesfully sent and I will get back to you soon.
+        Thanks for taking the time to reach out!
+      </h3>
+      <div className={classes.imageDiv}>
+        <img
+          src={thanksImage}
+          alt="software-developer"
+          className={classes.image}
+        />
+        <img
+          src={decorationImage}
+          alt="project separator"
+          className={classes.Separator}
+        />
+      </div>
+    </main>
+  ) : (
     <main className={classes.Contact}>
       <h1>Hey! </h1>
       <h2>Let's get in touch.</h2>
+      <h3>What can I do to help?</h3>
+      <div className={classes.imageDiv}>
+        <img
+          src={contactImage}
+          alt="software-developer"
+          className={classes.image}
+        />
+      </div>
       <form className={classes.ContactForm}>
         <label className={classes.ContactFormLabel}>
           Your name:
