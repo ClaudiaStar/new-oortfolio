@@ -10,18 +10,31 @@ function Home() {
     <React.Fragment>
       <div className={classes.Home}>
         <div className={classes.HomeContent}>
-          <h1>Hi, my name is Claudia.</h1>
-          <h2>I'm a junior web developer.</h2>
-          <h3 className={classes.Buzzwords}>
-            & a mom, engineer, minimalist, creative.
-          </h3>
-          <img
-            src={fittingPiecesImg}
-            alt="fitting pieces"
-            className={classes.FittingPiecesImg}
-          />
+          <div className={classes.HomeHero}>
+            <div className={classes.HomeTitleText}>
+              <h1>Hi, my name is Claudia.</h1>
+              <h2>I'm a junior web developer.</h2>
+              <h3 className={classes.Buzzwords}>
+                & a mom, engineer, minimalist, creative.
+              </h3>
+              <a
+                href={resume}
+                download
+                className={classes.ResumeLinkLargeScreen}
+              >
+                Get Resume
+              </a>
+            </div>
+
+            <img
+              src={fittingPiecesImg}
+              alt="fitting pieces"
+              className={classes.FittingPiecesImg}
+            />
+          </div>
+
           <br />
-          <a href={resume} download className={classes.ResumeLink}>
+          <a href={resume} download className={classes.ResumeLinkSmallScreen}>
             Get Resume
           </a>
           <p className={classes.HomeParagraph}>
@@ -37,8 +50,8 @@ function Home() {
           />
           <p className={classes.HomeParagraph2}>
             Besides designing, developing & creating, my life is fulfilled by
-            family, nature, yoga, deep conversation & efforts to leave the world
-            in a better condition than I found it.
+            family, nature, yoga, deep conversation & efforts to make a positive
+            impact in the world.
           </p>
         </div>
       </div>
