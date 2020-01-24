@@ -1,13 +1,17 @@
 .Contact {
-  width: 90%;
-  margin: auto;
+  width: 90vw;
   font-family: "Solway", serif;
   margin-bottom: 30px;
+  margin: 30px auto;
+}
+
+.ContactForm {
+  width: 100%;
 }
 
 .InputField {
   border: 2px solid #efc15d;
-  width: 100%;
+  width: 95%;
   margin-bottom: 20px;
 }
 

@@ -51,7 +51,6 @@ const Contact = () => {
 
   return submitClicked ? (
     <main>
-      {" "}
       <h3 className={classes.MessageThanks}>
         Your message has been succesfully sent and I will get back to you soon.
         Thanks for taking the time to reach out!
@@ -91,7 +90,6 @@ const Contact = () => {
             id="name"
             onChange={handleNameChange}
             className={classes.InputField}
-            size="54"
             name="name"
           />
         </label>
@@ -106,7 +104,6 @@ const Contact = () => {
             id="email"
             onChange={handleEmailChange}
             className={classes.InputField}
-            size="54"
             name="email"
           />
         </label>
@@ -122,7 +119,6 @@ const Contact = () => {
             onChange={handleMessageChange}
             className={classes.InputField}
             rows="10"
-            cols="50"
             name="message"
             placeholder="Dear Claudia,"
           />

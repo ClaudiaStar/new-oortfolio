@@ -13,7 +13,7 @@ h3 {
   display: table;
   width: 100%;
   margin: auto;
-  background-image: url("../../assets/images/home-bg.jpg");
+  background-color: #ffffff;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -23,17 +23,27 @@ h3 {
   padding-top: 0;
 }
 
-.Buzzwords {
-  color: #ff165d;
-  display: flex;
-  justify-content: space-evenly;
-  width: 30vw;
-  margin: auto;
+.FittingPiecesImg {
+  width: 60%;
 }
 
-.Self {
-  height: 150px;
-  border-radius: 100%;
+.ResumeLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 50px;
+  color: #fef6fb;
+  background-color: #efc15d;
+  padding: 10px;
+  border: 3px solid #efc15d;
+  border-radius: 5%;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ResumeLink:hover {
+  color: #393e46;
+  background-color: #fef6fb03;
 }
 
 .About {
@@ -42,11 +52,25 @@ h3 {
 }
 
 .HomeParagraph {
-  padding: 50px 20%;
+  padding: 50px 5% 0 5%;
   text-align: center;
   color: #393e46;
   display: table-cell;
   vertical-align: middle;
   line-height: 25px;
   font-weight: 600;
+}
+
+.HomeParagraph2 {
+  padding: 0 5% 50px 5%;
+  text-align: center;
+  color: #393e46;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.Separator {
+  width: 200px;
 }

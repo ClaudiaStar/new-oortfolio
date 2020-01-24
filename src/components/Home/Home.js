@@ -1,37 +1,44 @@
 import React from "react";
 import classes from "./Home.module.css";
 
-function Home() {
-  const link = { margin: "0 7px", color: "#393e46", cursor: "pointer" };
+import fittingPiecesImg from "../../assets/images/home-img.svg";
+import resume from "../../assets/files/resume.pdf";
+import decorationImage from "../../assets/images/separator.png";
 
+function Home() {
   return (
     <React.Fragment>
       <div className={classes.Home}>
         <div className={classes.HomeContent}>
           <h1>Hi, my name is Claudia.</h1>
-          <h2>I'm teaching myself web development.</h2>
+          <h2>I'm a junior web developer.</h2>
           <h3 className={classes.Buzzwords}>
-            <span>mom</span>
-            <span>|</span>
-            <span>engineer</span>
-            <span>|</span>
-            <span>minimalist</span>
-            <span>|</span>
-            <span>creative</span>
+            & a mom, engineer, minimalist, creative.
           </h3>
+          <img
+            src={fittingPiecesImg}
+            alt="fitting pieces"
+            className={classes.FittingPiecesImg}
+          />
+          <br />
+          <a href={resume} download className={classes.ResumeLink}>
+            Get Resume
+          </a>
           <p className={classes.HomeParagraph}>
-            "I am a civil engineer on my way to becoming a professional web
-            developer. I love that all you need are knowledge and creativity to
-            solve an infinite amount of problems. I learn with free (or almost
-            free) online platforms such as Udemy, FreeCodeCamp, LinkedIn
-            Learning & Meetup. Currently, I am putting React.js & Firebase to
-            use as I collaborate with
-            <a href="https://the-collab-lab.codes/" style={link}>
-              The Collab Lab
-            </a>
-            mentors and developers to create a smart shopping list application.
-            When away from my laptop you can find me spending time with my
-            husband, son, and fur child in beautiful Portland, OR."
+            My current obsessions are UX design, Shopify & React. I learn and
+            create everyday while raising my son. Now he is off to preschool and
+            I am looking for my first professional developer role and available
+            for freelance work with small businesses.
+          </p>
+          <img
+            src={decorationImage}
+            alt="project separator"
+            className={classes.Separator}
+          />
+          <p className={classes.HomeParagraph2}>
+            Besides designing, developing & creating, my life is fulfilled by
+            family, nature, yoga, deep conversation & efforts to leave the world
+            in a better condition than I found it.
           </p>
         </div>
       </div>
