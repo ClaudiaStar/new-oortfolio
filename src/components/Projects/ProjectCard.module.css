@@ -1,6 +1,6 @@
 .ProjectCard {
   border: 5px solid #ff165d;
-  max-width: 800px;
+  max-width: 80%;
   width: fit-content;
   padding: 10px;
   color: #393e46;
@@ -41,11 +41,11 @@
 }
 
 .ProjectImage {
-  width: 250px;
+  width: 100%;
 }
 
 .ProjectText {
-  width: 250px;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   text-align: left;

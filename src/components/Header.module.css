@@ -1,48 +1,7 @@
-.Header {
-  background-color: #f5f5f5;
-}
-
-.parent {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
-  list-style-type: none;
-  align-items: center;
-  margin: 0;
-  background-size: cover;
-  background-position: center;
-  height: 15vh;
-}
-
-.li1 {
-  grid-area: 1/1/2/2;
-}
-
-.li2 {
-  grid-area: 1/13/2/14;
-  align-items: center;
-}
-
-.li3 {
-  grid-area: 1/14/2/15;
-}
-
-.li4 {
-  grid-area: 1/15/2/16;
-}
-
-.NavLink {
-  text-decoration: none;
-  color: #ff165d;
-  padding: 5px;
-  border-radius: 10%;
+.Menu {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  width: 40px;
   cursor: pointer;
-  font-weight: bold;
-}
-
-.NavLink:hover,
-.NavLink:active {
-  font-weight: 900;
 }
