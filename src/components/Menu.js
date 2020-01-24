@@ -6,8 +6,7 @@ import classes from "./Menu.module.css";
 function Menu() {
   const [menuClicked, setMenuClicked] = useState(false);
 
-  const handleMenuClick = event => {
-    event.preventDefault();
+  const handleMenuClick = () => {
     setMenuClicked(true);
   };
 

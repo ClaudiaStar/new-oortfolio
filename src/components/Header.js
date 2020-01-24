@@ -19,8 +19,7 @@ function Header() {
     padding: "2%"
   };
 
-  const handleMenuClick = event => {
-    event.preventDefault();
+  const handleMenuClick = () => {
     setMenuClicked(true);
     if (menuClicked) {
       setMenuClicked(false);
