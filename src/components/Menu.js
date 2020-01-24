@@ -1,28 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "./Menu.module.css";
 
 function Menu() {
-  const handleNavClick = event => {
+  const [menuClicked, setMenuClicked] = useState(false);
+
+  const handleMenuClick = event => {
     event.preventDefault();
+    setMenuClicked(true);
   };
 
-  return (
-    <main className={classes.Menu}>
-      {/* <ul className={classes.MenuList}>
-        <li className={classes.MenuItem}> */}
+  return menuClicked ? null : (
+    <main className={classes.Menu} onClick={handleMenuClick}>
       <NavLink
         exact
         to="/"
         activeStyle={{ fontWeight: 900 }}
         className={classes.NavLink}
-        onClick={handleNavClick}
       >
         Home
       </NavLink>
-      {/* </li>
-        <li className={classes.MenuItem}> */}
       <NavLink
         to="/projects"
         activeStyle={{ fontWeight: 900 }}
@@ -30,9 +28,6 @@ function Menu() {
       >
         Projects
       </NavLink>
-      {/* </li>
-
-        <li className={classes.MenuItem}> */}
       <NavLink
         to="/contact"
         activeStyle={{ fontWeight: 900 }}
@@ -40,8 +35,6 @@ function Menu() {
       >
         Contact
       </NavLink>
-      {/* </li>
-      </ul> */}
     </main>
   );
 }

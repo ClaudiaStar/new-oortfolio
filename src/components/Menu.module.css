@@ -2,18 +2,37 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: #f5f5f5;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/menu-image.png");
+
   text-align: center;
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  top: 0;
+  left: 0;
+  padding-top: 20vh;
+}
+
+@keyframes slide {
+  from {
+    left: 200vw;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .NavLink {
   text-decoration: none;
-  color: #393e46;
+  color: white;
   padding: 5px;
   border-radius: 10%;
   cursor: pointer;
   font-weight: bold;
   display: block;
+  margin-top: 50px;
+  font-size: x-large;
 }
 
 .NavLink:hover,
