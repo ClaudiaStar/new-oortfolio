@@ -43,16 +43,17 @@ function Home() {
             I am looking for my first professional developer role and available
             for freelance work with small businesses.
           </p>
-          <img
-            src={decorationImage}
-            alt="project separator"
-            className={classes.Separator}
-          />
+          <br />
           <p className={classes.HomeParagraph2}>
             Besides designing, developing & creating, my life is fulfilled by
             family, nature, yoga, deep conversation & efforts to make a positive
             impact in the world.
           </p>
+          <img
+            src={decorationImage}
+            alt="project separator"
+            className={classes.Separator}
+          />
         </div>
       </div>
     </React.Fragment>

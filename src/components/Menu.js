@@ -11,7 +11,11 @@ function Menu() {
   };
 
   return menuClicked ? null : (
-    <main className={classes.Menu} onClick={handleMenuClick}>
+    <main
+      className={classes.Menu}
+      onClick={handleMenuClick}
+      onTouchStart={handleMenuClick}
+    >
       <NavLink
         exact
         to="/"

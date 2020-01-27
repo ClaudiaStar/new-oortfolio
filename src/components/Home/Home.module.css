@@ -64,7 +64,7 @@ h3 {
 }
 
 .HomeParagraph2 {
-  padding: 0 5% 50px 5%;
+  padding: 0 5%;
   text-align: center;
   color: #393e46;
   display: table-cell;
@@ -74,7 +74,7 @@ h3 {
 }
 
 .Separator {
-  width: 200px;
+  width: 80%;
 }
 
 @media screen and (min-device-width: 845px) {
@@ -103,7 +103,6 @@ h3 {
     display: block;
     margin: auto;
     text-align: left;
-    margin-top: 30px;
   }
 }
 
