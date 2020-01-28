@@ -1,7 +1,19 @@
-.Menu {
-  position: fixed;
-  top: 2%;
-  right: 5%;
-  width: 40px;
-  cursor: pointer;
+.Header {
+  justify-content: space-around;
+  margin-bottom: 10px;
+  border: #393e46 1px solid;
+  position: sticky;
+  top: 0;
+  display: flex;
+}
+
+.HomeIcon,
+.ProjectsIcon,
+.ContactIcon {
+  width: 33.33vw;
+  text-align: center;
+  background-color: #efc15d;
+  padding: 10px 0;
+  border: #393e46 1px solid;
+  box-sizing: border-box;
 }

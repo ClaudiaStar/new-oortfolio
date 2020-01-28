@@ -1,44 +1,41 @@
-import React, { useState } from "react";
+import React from "react";
+// add useState if going back to side bar menu
 import { NavLink } from "react-router-dom";
-
-import Menu from "./Menu";
+import homeIcon from "../assets/images/home-icon.svg";
+import projectIcon from "../assets/images/project-icon.svg";
+import msgIcon from "../assets/images/msg-icon.svg";
 
 import classes from "./Header.module.css";
 
-import menuImage from "../assets/images/menu.svg";
-
 function Header() {
-  const [menuClicked, setMenuClicked] = useState(false);
-
-  const logoStyles = {
-    textDecoration: "none",
-    fontSize: "30px",
-    fontFamily: "'Rock Salt', cursive",
-    cursor: "pointer",
-    color: "#557308",
-    padding: "2%"
-  };
-
-  const handleMenuClick = () => {
-    setMenuClicked(true);
-    if (menuClicked) {
-      setMenuClicked(false);
-    }
-  };
+  // const logoStyles = {
+  //   textDecoration: "none",
+  //   fontSize: "30px",
+  //   fontFamily: "'Rock Salt', cursive",
+  //   cursor: "pointer",
+  //   color: "#557308",
+  //   padding: "2%"
+  // };
 
   return (
     <header className={classes.Header}>
-      {menuClicked ? <Menu /> : null}
-      <div>
-        <nav>
-          <NavLink to="/" style={logoStyles}>
-            C.E.
-          </NavLink>
-          <div onClick={handleMenuClick}>
-            <img src={menuImage} alt="menu" className={classes.Menu} />
-          </div>
-        </nav>
-      </div>
+      <NavLink to="/" activeStyle={{ fontWeight: 900 }}>
+        <div className={classes.HomeIcon}>
+          <img src={homeIcon} alt="back to home"></img>
+        </div>
+      </NavLink>
+
+      <NavLink to="/projects" activeStyle={{ fontWeight: 900 }}>
+        <div className={classes.ProjectsIcon}>
+          <img src={projectIcon} alt="view projects"></img>
+        </div>
+      </NavLink>
+
+      <NavLink to="/contact" activeStyle={{ fontWeight: 900 }}>
+        <div className={classes.ContactIcon}>
+          <img src={msgIcon} alt="contact me"></img>
+        </div>
+      </NavLink>
     </header>
   );
 }

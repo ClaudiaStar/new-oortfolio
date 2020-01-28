@@ -13,6 +13,7 @@
   border: 2px solid #efc15d;
   width: 95%;
   margin-bottom: 20px;
+  padding: 5px;
 }
 
 .ContactSubmit {
@@ -52,4 +53,24 @@
 
 .Separator {
   width: 200px;
+}
+
+@media screen and (min-device-width: 845px) {
+  .Contact {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .TextAndPicture {
+    width: 30vw;
+    text-align: right;
+    margin: auto;
+  }
+  .image {
+    width: 30vw;
+  }
+  .ContactForm {
+    width: 40vw;
+    align-self: center;
+  }
 }
