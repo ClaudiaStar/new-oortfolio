@@ -3,7 +3,6 @@ import firebase from "../../lib/firestore";
 import classes from "./Contact.module.css";
 
 import thanksImage from "../../assets/images/messagethanks.svg";
-import decorationImage from "../../assets/images/separator.png";
 import contactImage from "../../assets/images/contact.svg";
 
 const Contact = () => {
@@ -60,11 +59,6 @@ const Contact = () => {
           src={thanksImage}
           alt="software-developer"
           className={classes.image}
-        />
-        <img
-          src={decorationImage}
-          alt="project separator"
-          className={classes.Separator}
         />
       </div>
     </main>

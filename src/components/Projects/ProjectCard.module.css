@@ -1,4 +1,16 @@
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
 .ProjectCard {
+  animation: transitionIn 0.75s;
   max-width: 80%;
   width: fit-content;
   padding: 10px;
@@ -10,14 +22,15 @@
   border-radius: 0.5em;
   box-shadow: -10px -10px 10px 0 rgba(255, 255, 255, 1),
     10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
 }
 
 .ProjectLink {
   text-decoration: none;
   color: #fef6fb;
-  background-color: #efc15d;
+  background-color: #557308;
   padding: 10px;
-  border: 3px solid #efc15d;
+  border: 3px solid #557308;
   border-radius: 5%;
   cursor: pointer;
   margin: 10px;

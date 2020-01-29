@@ -13,19 +13,26 @@ h3 {
   display: table;
   width: 100%;
   margin: auto;
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .HomeContent {
   padding-top: 0;
 }
 
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
 .FittingPiecesImg {
   width: 60%;
+  animation: transitionIn 0.75s;
 }
 
 .ResumeLinkLargeScreen,
@@ -43,7 +50,8 @@ h3 {
   font-weight: 600;
 }
 
-.ResumeLink:hover {
+.ResumeLinkLargeScreen:hover,
+.ResumeLinkSmallScreen:hover {
   color: #393e46;
   background-color: #fef6fb03;
 }
@@ -71,10 +79,6 @@ h3 {
   vertical-align: middle;
   line-height: 25px;
   font-weight: 600;
-}
-
-.Separator {
-  width: 80%;
 }
 
 @media screen and (min-device-width: 845px) {

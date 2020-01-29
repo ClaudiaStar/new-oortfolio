@@ -3,7 +3,6 @@ import classes from "./Home.module.css";
 
 import fittingPiecesImg from "../../assets/images/home-img.svg";
 import resume from "../../assets/files/resume.pdf";
-import decorationImage from "../../assets/images/separator.png";
 
 function Home() {
   return (
@@ -49,11 +48,6 @@ function Home() {
             family, nature, yoga, deep conversation & efforts to make a positive
             impact in the world.
           </p>
-          <img
-            src={decorationImage}
-            alt="project separator"
-            className={classes.Separator}
-          />
         </div>
       </div>
     </React.Fragment>
