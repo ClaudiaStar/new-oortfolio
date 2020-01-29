@@ -3,13 +3,13 @@
   width: fit-content;
   padding: 10px;
   color: #393e46;
-  margin: auto;
+  margin: 0 auto 70px auto;
   text-align: center;
   line-height: 25px;
   font-weight: 400;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  border-radius: 0.5em;
+  box-shadow: -10px -10px 10px 0 rgba(255, 255, 255, 1),
+    10px 10px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .ProjectLink {
@@ -21,6 +21,9 @@
   border-radius: 5%;
   cursor: pointer;
   margin: 10px;
+  border-radius: 0.5em;
+  box-shadow: -5px -5px 5px 0 rgba(255, 255, 255, 1),
+    5px 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .ProjectLink:hover {
@@ -30,53 +33,26 @@
 
 .LinkDiv {
   text-align: center;
-  margin-top: 50px;
-}
-
-.ProjectImage {
-  width: 100%;
+  margin: 50px auto;
 }
 
 .ProjectDescription {
   width: 100%;
   margin: auto;
-  margin-bottom: 20px;
   text-align: left;
-}
-
-.ProjectSeparator {
-  width: 250px;
-  margin-top: 40px;
 }
 
 @media only screen and (min-device-width: 845px) {
   .ProjectCard {
-    padding: 5% 0;
-    border-bottom: 2px solid black;
+    width: 300px;
   }
-  .ProjectTextAndImage {
-    display: grid;
-    grid-template-columns: [c1] 30% [c2] 10% [c3] 50% [c4] 10% [c5];
-    grid-template-rows: [r1] 30% [r2] 10% [r3];
-  }
+
   .ProjectText {
     text-align: left;
     padding-left: 5%;
-    grid-column: c2 / c4;
-    grid-row: r1 / r3;
-  }
-
-  .ProjectImage {
-    grid-column: c1 / c2;
-    grid-row: r1 / r3;
-    height: auto;
-    width: 200px;
   }
 
   .LinkDiv > a {
     margin: 0 2% 0 2%;
-  }
-  .ProjectSeparator {
-    display: none;
   }
 }

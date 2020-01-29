@@ -9,3 +9,14 @@
 .ProjectsSection {
   margin-bottom: 60px;
 }
+
+.ProjectCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-device-width: 845px) {
+  .ProjectCards {
+    padding: 20px 200px 0 200px;
+  }
+}

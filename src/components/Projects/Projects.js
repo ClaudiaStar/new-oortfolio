@@ -55,7 +55,7 @@ export default () => {
           My passion is creating and programming gives me endless possibilities.
         </p>
       </div>
-      {projectCards}
+      <div className={classes.ProjectCards}>{projectCards}</div>
     </div>
   );
 };

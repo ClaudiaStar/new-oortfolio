@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./ProjectCard.module.css";
 
-import projectSeparator from "../../assets/images/separator.png";
-
 function ProjectCard(props) {
   return (
     // eslint-disable-next-line react/jsx-no-target-blank
@@ -12,19 +10,11 @@ function ProjectCard(props) {
       }}
       className={classes.ProjectCard}
     >
-      <div className={classes.ProjectTextAndImage}>
-        <div className={classes.ProjectText}>
-          <h2>{props.title}</h2>
-          <p className={classes.ProjectDescription}>{props.description}</p>
-        </div>
-        <div>
-          <img
-            src={props.image}
-            alt="project"
-            className={classes.ProjectImage}
-          />
-        </div>
+      <div className={classes.ProjectText}>
+        <h2>{props.title}</h2>
+        <p className={classes.ProjectDescription}>{props.description}</p>
       </div>
+
       <div className={classes.LinkDiv}>
         <a
           href={props.codeLink}
@@ -43,11 +33,6 @@ function ProjectCard(props) {
           View App
         </a>
       </div>
-      <img
-        src={projectSeparator}
-        alt="project separator"
-        className={classes.ProjectSeparator}
-      />
     </div>
   );
 }
