@@ -12,9 +12,19 @@ function ProjectCard(props) {
       }}
       className={classes.ProjectCard}
     >
-      <h2>{props.title}</h2>
-      <p className={classes.ProjectText}>{props.description}</p>
-      <img src={props.image} alt="project" className={classes.ProjectImage} />
+      <div className={classes.ProjectTextAndImage}>
+        <div className={classes.ProjectText}>
+          <h2>{props.title}</h2>
+          <p className={classes.ProjectDescription}>{props.description}</p>
+        </div>
+        <div>
+          <img
+            src={props.image}
+            alt="project"
+            className={classes.ProjectImage}
+          />
+        </div>
+      </div>
       <div className={classes.LinkDiv}>
         <a
           href={props.codeLink}

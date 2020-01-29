@@ -12,12 +12,6 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 600px) {
-  .ProjectCard {
-    border: none;
-  }
-}
-
 .ProjectLink {
   text-decoration: none;
   color: #fef6fb;
@@ -43,7 +37,7 @@
   width: 100%;
 }
 
-.ProjectText {
+.ProjectDescription {
   width: 100%;
   margin: auto;
   margin-bottom: 20px;
@@ -53,4 +47,36 @@
 .ProjectSeparator {
   width: 250px;
   margin-top: 40px;
+}
+
+@media only screen and (min-device-width: 845px) {
+  .ProjectCard {
+    padding: 5% 0;
+    border-bottom: 2px solid black;
+  }
+  .ProjectTextAndImage {
+    display: grid;
+    grid-template-columns: [c1] 30% [c2] 10% [c3] 50% [c4] 10% [c5];
+    grid-template-rows: [r1] 30% [r2] 10% [r3];
+  }
+  .ProjectText {
+    text-align: left;
+    padding-left: 5%;
+    grid-column: c2 / c4;
+    grid-row: r1 / r3;
+  }
+
+  .ProjectImage {
+    grid-column: c1 / c2;
+    grid-row: r1 / r3;
+    height: auto;
+    width: 200px;
+  }
+
+  .LinkDiv > a {
+    margin: 0 2% 0 2%;
+  }
+  .ProjectSeparator {
+    display: none;
+  }
 }
