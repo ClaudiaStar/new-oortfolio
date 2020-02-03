@@ -12,10 +12,7 @@ function Home() {
           <div className={classes.HomeHero}>
             <div className={classes.HomeTitleText}>
               <h1>Hi, my name is Claudia.</h1>
-              <h2>I'm a junior web developer.</h2>
-              <h3 className={classes.Buzzwords}>
-                & a mom, engineer, minimalist, creative.
-              </h3>
+              <h3>I create beautiful and functional web experiences.</h3>
               <a
                 href={resume}
                 download
